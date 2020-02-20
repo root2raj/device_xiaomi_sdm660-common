@@ -32,4 +32,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 <resources>
     <!-- Enable doze mode -->
     <bool name="doze_display_state_supported">true</bool>
+
+    <!-- Override value to use for proximity sensor.  -->
+    <string name="proximity_sensor_type" translatable="false">com.google.sensor.binned_brightness</string>
+
+    <!-- If using proximity_sensor_type, specifies a threshold value to distinguish near and
+         far break points.-->
+    <item name="proximity_sensor_threshold" translatable="false" format="float" type="dimen">1</item>
 </resources>
