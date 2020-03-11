@@ -14,3 +14,7 @@ get_prop(untrusted_app, camera_prop)
 allow untrusted_app exported_camera_prop:file { read open getattr };
 allow untrusted_app_27 exported_camera_prop: file { read open getattr };
 allow untrusted_app_29 exported_camera_prop:file { read open getattr };
+
+dontaudit untrusted_app_29 vendor_persist_camera_prop:file read;
+   
+dontaudit gmscore_app { bt_firmware_file firmware_file }:filesystem getattr;
