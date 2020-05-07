@@ -1,2 +1,12 @@
-allow untrusted_app_27 theme_prop:file { read };
+allow untrusted_app_27 theme_prop:file { read open };
+allow untrusted_app_27 proc_net:file { read };
+allow untrusted_app_27 proc_net_tcp_udp:file { read };
+allow untrusted_app_27 proc_qtaguid_stat:file { read };
+allow untrusted_app_27 sysfs_kgsl:file { read };
+allow untrusted_app_27 rootfs:dir { read };
+dontaudit untrusted_app_27 serialno_prop:file { getattr open read };
+allow untrusted_app_27 sysfs_devfreq:dir { search };
+allow untrusted_app_27 theme_prop:file { getattr };
+allow untrusted_app_27 untrusted_app_27:udp_socket { ioctl };
 get_prop(untrusted_app_27, persist_camera_prop)
+
