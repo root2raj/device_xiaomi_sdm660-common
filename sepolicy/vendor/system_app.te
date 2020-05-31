@@ -18,6 +18,8 @@ allow system_app hal_mlipay_hwservice:hwservice_manager find;
 allow system_app hal_mlipay_default:binder call;
 allow system_app vendor_default_prop:file { read };
 allow system_app system_data_file:dir { write };
+allow system_app sysfs_kgsl:lnk_file { read };
+
 
 allow system_app sysfs_touchboost:file { open read getattr write };
 # USB Fastcharge

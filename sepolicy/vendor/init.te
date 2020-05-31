@@ -6,3 +6,5 @@ allow init su:process { noatsecure  rlimitinh  siginh  transition };
 allow init sysfs_usbcharge:file { write open };
 # Fastcharge
 allow init sysfs_fcharge:file { write open };
+
+allow init hal_perf_default:binder { call };

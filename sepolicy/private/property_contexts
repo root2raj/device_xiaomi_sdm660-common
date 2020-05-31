@@ -1,1 +1,5 @@
 #vendor.camera.aux.packageblacklist u:object_r:vendor_camera_prop:s0
+vendor.camera.*      u:object_r:vendor_camera_prop:s0
+persist.camera.*     u:object_r:vendor_camera_prop:s0
+vendor.fastrpc.process.attrs   u:object_r:vendor_adsprpc_prop:s0 exact int
+vendor.fastrpc.debug.trace     u:object_r:vendor_adsprpc_prop:s0 exact int

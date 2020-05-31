@@ -10,4 +10,7 @@ allow system_server vendor_default_prop:file { getattr open read };
 allow system_server sysfs_battery_supply:file rw_file_perms;
 allow system_server sysfs_vibrator:file rw_file_perms;
 allow system_server vendor_default_prop:file { getattr open read };
+allow system_server sysfs_battery_supply:file { getattr open read write };
+allow system_server init:binder { transfer call };
+allow system_server proc:file { getattr  open  read };
 
