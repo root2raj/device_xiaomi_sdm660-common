@@ -1,4 +1,4 @@
-# Audiomedia
+# Audio
 PRODUCT_PROPERTY_OVERRIDES += \
     af.fast_track_multiplier=1 \
     vendor.audio_hal.period_size=240 \
@@ -193,12 +193,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.ims.disableIMSLogs=1 \
     persist.vendor.ims.disableQXDMLogs=1
 endif
-
-# IORap
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.iorapd.enable=true \
-    iorapd.perfetto.enable=true \
-    iorapd.readahead.enable=true
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
