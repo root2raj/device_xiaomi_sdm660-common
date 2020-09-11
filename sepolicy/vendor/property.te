@@ -8,4 +8,4 @@ type fm_prop, property_type;
 
 # Dirac
 type dirac_prop, property_type;
-
+type vendor_power_prop, property_type;
