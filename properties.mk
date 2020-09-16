@@ -93,6 +93,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.preview.ubwc=0 \
     vendor.video.disable.ubwc=1 \
+    sys.display-size=3840x2160 \
     vidc.enc.dcvs.extra-buff-count=2 \
     persist.vendor.camera.preview.ubwc=0 \
     persist.vendor.camera.stats.test=5 \
