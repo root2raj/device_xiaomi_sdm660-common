@@ -13,3 +13,4 @@ allow init firmware_file:filesystem getattr;
 allow init bt_firmware_file:filesystem getattr;
 
 allow init vendor_file:file { execute };
+allow init proc_last_kmsg:file setattr;

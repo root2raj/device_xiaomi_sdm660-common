@@ -59,3 +59,5 @@
 # Touchboost
 /sys/module/msm_performance/parameters/touchboost		            u:object_r:sysfs_touchboost:s0
 
+# vbswap device for zswap
+/dev/block/vbswap0         u:object_r:swap_block_device:s0

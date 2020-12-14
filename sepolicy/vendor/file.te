@@ -30,3 +30,4 @@ type sysfs_usbcharge, sysfs_type, fs_type;
 # Fastcharge
 type sysfs_fcharge, sysfs_type, fs_type;
 
+type proc_last_kmsg, fs_type, proc_type;

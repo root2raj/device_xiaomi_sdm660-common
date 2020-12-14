@@ -54,3 +54,9 @@ genfscon sysfs /sys/devices/virtual/graphics/fb0/measured_fps        u:object_r:
 # USB force fastcharge
 genfscon sysfs /kernel/fast_charge/force_fast_charge                                     u:object_r:sysfs_usbcharge:s0
 
+genfscon proc /last_kmsg                                                  u:object_r:proc_last_kmsg:s0
+
+# vbswap device for zswap
+# apply zram context to avoid complicating policies
+genfscon sysfs /devices/virtual/block/vbswap0     u:object_r:sysfs_zram:s0
+genfscon sysfs /devices/virtual/block/vbswap0/uevent    u:object_r:sysfs_zram_uevent:s0
