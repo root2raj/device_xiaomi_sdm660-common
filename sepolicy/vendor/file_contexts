@@ -48,3 +48,7 @@
 
 # Thermal
 /data/vendor/thermal(/.*)?                      u:object_r:thermal_data_file:s0
+
+# Touchboost
+/sys/module/msm_performance/parameters/touchboost		            u:object_r:sysfs_touchboost:s0
+

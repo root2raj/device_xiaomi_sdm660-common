@@ -155,6 +155,17 @@ on boot
     chmod 0666 /sys/class/graphics/fb0/measured_fps
 
 
+# Battery charging
+    chown system system /sys/class/power_supply/battery/input_suspend
+    chmod 0666 /sys/class/power_supply/battery/input_suspend
+
+
+    # Touchboost permissions
+  chown system system /sys/module/msm_performance/parameters/touchboost
+  chmod 0660 /sys/module/msm_performance/parameters/touchboost
+
+
+
 #Peripheral manager
 service vendor.per_mgr /system/vendor/bin/pm-service
     class core
