@@ -1,2 +1,5 @@
 # Allow init to chown/chmod on pseudo files in /sys
 allow init sysfs_type:file { setattr };
+allow init socket_device:sock_file { unlink setattr create };
+allow init su:process { noatsecure  rlimitinh  siginh  transition };
+
