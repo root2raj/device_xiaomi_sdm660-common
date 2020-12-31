@@ -1,0 +1,3 @@
+allow crash_dump hwservicemanager_prop:file { open };
+allow crash_dump hwservicemanager_prop:file { getattr };
+allow crash_dump hwservicemanager_prop:file { map };
