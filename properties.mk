@@ -207,6 +207,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.multisim.config=dsds \
     persist.vendor.data.iwlan.enable=true \
     persist.vendor.data.mode=concurrent \
+    persist.vendor.radio.add_power_save=1 \
     persist.vendor.radio.apm_sim_not_pwdn=1 \
     persist.vendor.radio.atfwd.start=true \
     persist.vendor.radio.custom_ecc=1 \
@@ -214,7 +215,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.sib16_support=1 \
     ro.telephony.default_network=22,22 \
-    ro.vendor.use_data_netmgrd=true
+    ro.vendor.use_data_netmgrd=true 
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     DEVICE_PROVISIONED=1 \
