@@ -20,6 +20,8 @@ allow system_app vendor_default_prop:file { read };
 allow system_app system_data_file:dir { write };
 
 allow system_app sysfs_touchboost:file { open read getattr write };
+# Fastcharge
+allow system_app sysfs_fcharge:file { open read getattr write };
 
 
 allow system_app sysfs_battery_supply:dir { search };

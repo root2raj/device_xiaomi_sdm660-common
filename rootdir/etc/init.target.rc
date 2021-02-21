@@ -163,6 +163,10 @@ on boot
     # Touchboost permissions
   chown system system /sys/module/msm_performance/parameters/touchboost
   chmod 0660 /sys/module/msm_performance/parameters/touchboost
+  
+    # Fastcharge permissions
+  chown system system /sys/class/power_supply/bms/fastcharge_mode
+  chmod 0660 /sys/class/power_supply/bms/fastcharge_mode
 
 
 

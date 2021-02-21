@@ -2,4 +2,5 @@
 allow init sysfs_type:file { setattr };
 allow init socket_device:sock_file { unlink setattr create };
 allow init su:process { noatsecure  rlimitinh  siginh  transition };
-
+# Fastcharge
+allow init sysfs_fcharge:file { write open };
