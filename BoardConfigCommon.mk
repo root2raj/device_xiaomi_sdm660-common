@@ -55,6 +55,7 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 KERNEL_LD := LD=ld.lld
 TARGET_KERNEL_SOURCE := kernel/xiaomi/whyred
+TARGET_KERNEL_CONFIG := whyred_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 
 # QCOM hardware
