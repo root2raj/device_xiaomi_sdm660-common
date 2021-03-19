@@ -313,4 +313,8 @@
     <string name="config_smartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
     <string name="config_smartChargingSuspendValue" translatable="false">1</string>
     <string name="config_smartChargingResumeValue" translatable="false">0</string>
+
+    <!-- Amount of time in ms the user needs to press the relevant keys to trigger the
+         screenshot chord -->
+   <integer name="config_screenshotChordKeyTimeout">0</integer>
 </resources>
