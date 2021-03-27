@@ -519,5 +519,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_BOARD_PLATFORM := sdm660
 PRODUCT_USES_QCOM_HARDWARE := true
 
+# Xiaomi Ringtone
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/media/MI.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/MI.ogg \
+    $(LOCAL_PATH)/media/MiClassic.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/MiClassic.ogg \
+    $(LOCAL_PATH)/media/MiMix.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/MiMix.ogg
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/sdm660-common/sdm660-common-vendor.mk)
