@@ -110,7 +110,8 @@ PRODUCT_PACKAGES += \
     libhdmiedid \
     libhfp \
     libsndmonitor \
-    libldacBT_dec
+    libldacBT_dec \
+    libbthost_if
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
