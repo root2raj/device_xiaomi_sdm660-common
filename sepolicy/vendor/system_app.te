@@ -42,4 +42,4 @@ allow system_app sysfs_zram:file r_file_perms;
 # Battery Health
 r_dir_file(system_app, sysfs_battery_supply);
 
-allow system_app diag_device:chr_file rw_file_perms;
+diag_use(system_app)
