@@ -125,6 +125,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.enable_default_color_mode=1 \
     vendor.gralloc.enable_fb_ubwc=1
 
+# The default sf phase offset is set to 6ms, to avoid it be included into next
+# vsync threshold, set high fps early sf and next vsync threshold phase offset
+# to 6.1ms, which is bigger than all sf phase offsets in normal frame rate.
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.high_fps_early_phase_offset_ns=6100000 \
+    debug.sf.high_fps_early_gl_phase_offset_ns=9000000 \
+    debug.sf.phase_offset_threshold_for_next_vsync_ns=6100000
+
 # FRP
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp
