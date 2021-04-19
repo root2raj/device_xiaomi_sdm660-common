@@ -4,6 +4,7 @@ allow system_app kcal_dev:file rw_file_perms;
 allow system_app kcal_dev:dir search;
 allow system_app sysfs_vibrator:file rw_file_perms;
 allow system_app sysfs_vibrator:dir search;
+allow system_app sysfs_audio_gain:file rw_file_perms;
 allow system_app sysfs_headgain:file { open read getattr write };
 allow system_app sysfs_micgain:file { open read getattr write };
 allow system_app sysfs_backlight:file { open read getattr write };
@@ -20,7 +21,10 @@ allow system_app vendor_default_prop:file { read };
 allow system_app system_data_file:dir { write };
 allow system_app sysfs_kgsl:lnk_file { read };
 allow system_app sysfs_kgsl:dir { search };
-
+allow system_app sysfs_egain:file { open read getattr write };
+allow system_app sysfs_hgain:file { open read getattr write };
+allow system_app sysfs_mgain:file { open read getattr write };
+allow system_app sysfs_sgain:file { open read getattr write };
 allow system_app sysfs_touchboost:file { open read getattr write };
 # USB Fastcharge
 allow system_app sysfs_usbcharge:file { open read getattr write };
