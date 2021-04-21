@@ -11,7 +11,6 @@ type sysfs_backlight, sysfs_type, fs_type;
 type sysfs_egain, sysfs_type, fs_type;
 type sysfs_backlightdim, sysfs_type, fs_type;
 type sysfs_fpsinfo, sysfs_type, fs_type;
-type sysfs_fps, sysfs_type, fs_type;
 type sysfs_torch, fs_type, sysfs_type;
 type proc_sysctl_sched_energy_aware, proc_type, fs_type;
 type sysfs_touchboost, sysfs_type, fs_type;
@@ -25,4 +24,3 @@ type sysfs_usbcharge, sysfs_type, fs_type;
 # Fastcharge
 type sysfs_fcharge, sysfs_type, fs_type;
 
-type kcal_dev, sysfs_type, fs_type;
