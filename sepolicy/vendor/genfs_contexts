@@ -48,6 +48,9 @@ genfscon sysfs /touchpanel                                      u:object_r:sysfs
 # Fastcharge
 genfscon sysfs /class/power_supply/bms/fastcharge_mode                    u:object_r:sysfs_fcharge:s0
 
+# FPS Info
+genfscon sysfs /sys/devices/virtual/graphics/fb0/measured_fps        u:object_r:sysfs_fps:s0
+
 # USB force fastcharge
 genfscon sysfs /kernel/fast_charge/force_fast_charge                                     u:object_r:sysfs_usbcharge:s0
 
