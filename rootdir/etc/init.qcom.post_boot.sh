@@ -2001,6 +2001,9 @@ case "$target" in
             # Enable low power modes
             echo 0 > /sys/module/lpm_levels/parameters/sleep_disabled
 
+            # Turn off scheduler boost at the end
+            echo 0 > /proc/sys/kernel/sched_boost
+
             # Set Memory parameters
             configure_memory_parameters
 
