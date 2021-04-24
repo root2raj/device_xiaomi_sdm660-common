@@ -10,6 +10,4 @@ allow system_server vendor_default_prop:file { getattr open read };
 allow system_server sysfs_battery_supply:file rw_file_perms;
 allow system_server sysfs_vibrator:file rw_file_perms;
 allow system_server vendor_default_prop:file { getattr open read };
-# livedisplay
-allow system_server vendor_default_prop:file { read };
-allow system_server sysfs_livedisplay_tuneable:file { read };
+
