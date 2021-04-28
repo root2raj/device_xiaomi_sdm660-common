@@ -1,4 +1,4 @@
-# Audio
+# Audiomedia
 PRODUCT_PROPERTY_OVERRIDES += \
     af.fast_track_multiplier=1 \
     vendor.audio_hal.period_size=240 \
@@ -122,10 +122,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.HAL3.enabled=1 \
     persist.vendor.camera.ltm.overlap=13
 
-    PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner,com.instagram.android \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
-
 # Charger
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.charger.disable_init_blank=true \
@@ -197,6 +193,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.ims.disableIMSLogs=1 \
     persist.vendor.ims.disableQXDMLogs=1
 endif
+
+# IORap
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.iorapd.enable=true \
+    iorapd.perfetto.enable=true \
+    iorapd.readahead.enable=true
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
