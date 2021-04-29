@@ -9,7 +9,6 @@ type kcal_dev, sysfs_type, fs_type;
 type sysfs_headgain, sysfs_type, fs_type;
 type sysfs_micgain, sysfs_type, fs_type;
 type sysfs_backlight, sysfs_type, fs_type;
-type sysfs_egain, sysfs_type, fs_type;
 type sysfs_backlightdim, sysfs_type, fs_type;
 type sysfs_fpsinfo, sysfs_type, fs_type;
 type sysfs_torch, fs_type, sysfs_type;
