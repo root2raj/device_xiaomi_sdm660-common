@@ -320,7 +320,6 @@
 
     <!-- Amount of time in ms the user needs to press the relevant keys to trigger the
          screenshot chord -->
-<<<<<<< HEAD
    <integer name="config_screenshotChordKeyTimeout">0</integer>
 
  <!-- Flag indicating whether the surface flinger has limited
@@ -352,4 +351,5 @@
 
     <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
     <integer name="config_screenRecorderMaxFramerate">60</integer>
+
 </resources>
