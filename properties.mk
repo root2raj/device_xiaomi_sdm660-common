@@ -128,7 +128,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
     PRODUCT_PROPERTY_OVERRIDES += \
     vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner,com.instagram.android \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera \
+    vendor.camera.aux.packageexcludelist=com.discord
 
 # Charger
 PRODUCT_PRODUCT_PROPERTIES += \
