@@ -1,4 +1,4 @@
-# Audio
+#Audio
 PRODUCT_PROPERTY_OVERRIDES += \
     af.fast_track_multiplier=1 \
     vendor.audio_hal.period_size=240 \
@@ -303,3 +303,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     sys.use_fifo_ui=1 \
     pm.dexopt.bg-dexopt=speed-profile \
     pm.dexopt.shared=speed
+
+# IORap
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.iorapd.enable=true \
+    iorapd.perfetto.enable=true \
+    iorapd.readahead.enable=true
