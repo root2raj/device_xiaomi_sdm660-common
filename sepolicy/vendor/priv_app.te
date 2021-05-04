@@ -13,3 +13,5 @@ allow priv_app sysfs_kgsl:lnk_file { getattr open read };
 allow priv_app proc_interrupts:file { getattr open read };
 allow priv_app proc_modules:file { open read getattr };
 allow priv_app exported_camera_prop:file { read open getattr };
+allow priv_app sysfs_graphics:file { read };
+allow priv_app sysfs_graphics:file { open };
