@@ -10,8 +10,11 @@ allow init adsprpcd_file:file mounton;
 allow vendor_init proc_sysctl_sched_energy_aware:file w_file_perms;
 allow vendor_init unlabeled:{ dir file } { getattr relabelfrom };
 allow vendor_init dirac_prop:property_service { set };
+allow vendor_init camera_data_file:dir getattr; allow 
+allow vendor_init media_rw_data_file:file { read open getattr };
 allow vendor_init fm_prop:property_service { set };
 
+allow init adsprpcd_file:file mounton;
 
 set_prop(vendor_init, freq_prop)
 
