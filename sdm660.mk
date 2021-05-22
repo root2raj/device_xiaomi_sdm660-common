@@ -337,8 +337,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.3-service.xiaomi_sdm660-libperfmgr \
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf \
-    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+    $(LOCAL_PATH)/configs/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf
 
 # Powerhint
 ifeq ($(EAS_POWERHINT_VARIANT), sdm636)
