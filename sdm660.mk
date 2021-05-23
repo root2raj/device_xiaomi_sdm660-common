@@ -167,9 +167,10 @@ PRODUCT_PACKAGES += \
     hwcomposer.sdm660 \
     memtrack.sdm660 \
     libdisplayconfig \
+    libdisplayconfig.qti \
+    libdisplayconfig.qti.vendor \
     libtinyxml \
-    libqdMetaData \
-    libqdMetaData.system
+    libqdMetaData
 
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0_32 \
@@ -427,7 +428,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libaacwrapper \
     libnl \
-    libshim_wfdmmsink
+    libshim_wfdmmsink \
+    libstagefright_enc_common
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
