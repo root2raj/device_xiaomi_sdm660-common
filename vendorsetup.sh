@@ -17,9 +17,5 @@ git clone https://github.com/11-whyred-new/android_packages_apps_Settings -b dot
 git clone https://github.com/11-whyred-new/android_frameworks_av-1 -b dot11 frameworks/av
 git clone https://github.com/11-whyred-new/android_device_dot_sepolicy -b dot11 device/dot/sepolicy
 git clone https://github.com/11-whyred-new/android_vendor_dot -b dot11 vendor/dot
-git clone https://github.com/11-whyred-new/external_faceunlock external/faceunlock
-git clone https://github.com/11-whyred-new/packages_apps_FaceUnlockService packages/apps/FaceUnlockService
-git clone ttps://github.com/11-whyred-new/android_external_airbnb-lottie -b eleven external/airbnb-lottie
-git clone https://github.com/11-whyred-new/external_asus_stitchimage external/asus/stitchimage
 git clone https://github.com/11-whyred-new/MiuiCamera -b cr-9.0 vendor/MiuiCamera
 git clone https://github.com/predator112/STOCK_Q_kernel_whyred -b android-10-eas kernel/xiaomi/sdm660
