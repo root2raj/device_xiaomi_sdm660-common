@@ -61,3 +61,6 @@
 
 # vbswap device for zswap
 /dev/block/vbswap0         u:object_r:swap_block_device:s0
+
+# Video4linux sysfs nodes
+/sys/devices/soc/caa0000\.qcom,jpeg/video4linux/video1(/.*)?                       u:object_r:sysfs_graphics:s0
