@@ -22,3 +22,5 @@ set_prop(hal_camera_default, vendor_default_prop)
 
 set_prop(hal_camera_default, camera_prop)
 get_prop(hal_camera_default, camera_ro_prop)
+
+set_prop(hal_camera_default, vendor_video_prop)
