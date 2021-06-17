@@ -1,2 +1,3 @@
+allow mediaserver vendor_default_prop:file { read };
 allow mediaserver vendor_sys_video_prop:file { read open getattr };
 binder_call(mediaprovider, gpuservice)
