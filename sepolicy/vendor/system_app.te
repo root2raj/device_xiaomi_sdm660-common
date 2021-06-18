@@ -31,6 +31,9 @@ allow system_app sysfs_usbcharge:file { open read getattr write };
 # Fastcharge
 allow system_app sysfs_fcharge:file { open read getattr write };
 
+# FPS Info
+allow system_app sysfs_fps:file rw_file_perms;
+allow system_app sysfs_fpsinfo:file rw_file_perms;
 
 allow system_app sysfs_battery_supply:dir { search };
 allow system_app sysfs_battery_supply:file { read };
