@@ -1,0 +1,1 @@
+allow netmgrd netmgrd:capability sys_admin;

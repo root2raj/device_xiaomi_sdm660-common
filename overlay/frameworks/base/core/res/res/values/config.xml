@@ -360,4 +360,10 @@
     <string name="db_default_sync_mode">OFF</string>
     <string name="db_wal_sync_mode">OFF</string>
 
+    <!-- PocketLock -->
+    <bool name="config_pocketModeSupported">true</bool>
+
+    <!-- Defines custom Vendor sensor for pocket detection. -->
+    <string name="config_pocketJudgeVendorSensorName">xiaomi.sensor.pocket</string>
+
 </resources>
