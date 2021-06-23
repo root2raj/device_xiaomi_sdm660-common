@@ -255,7 +255,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     DEVICE_PROVISIONED=1 \
     ril.subscription.types=NV,RUIM \
-    telephony.lteOnCdmaDevice=1
+    telephony.lteOnCdmaDevice=1 \
+    ro.vold.umsdirtyratio=20 \
+    ro.ril.disable.power.collapse=0
 
 # Sensor
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -310,3 +312,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Enable QC2 bufferqueue block-pool
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.qc2.use.bqpool=1
+
+# Power saving
+PRODUCT_PROPERTY_OVERRIDES += \
+    power.saving.mode=1 \
+    pm.sleep_mode=1
+
