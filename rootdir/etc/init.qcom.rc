@@ -452,9 +452,6 @@ on property:vendor.radio.atfwd.start=false
 on property:vendor.media.target.version=*
     setprop vendor.sys.media.target.version ${vendor.media.target.version}
 
-on property:vendor.netflix.bsp_rev=*
-    setprop ro.netflix.bsp_rev ${vendor.netflix.bsp_rev}
-
 service qcom-c_main-sh /vendor/bin/init.class_main.sh
     class main
     user root
