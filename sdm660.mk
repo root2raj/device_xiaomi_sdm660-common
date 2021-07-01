@@ -21,6 +21,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+    hardware/google/interfaces \
+    hardware/google/pixel \
+    hardware/xiaomi
 
 # Dexpreopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
@@ -362,15 +365,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf
 
-# Powerhint
-ifeq ($(EAS_POWERHINT_VARIANT), sdm636)
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/power-libperfmgr/sdm636_powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
-else
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/power-libperfmgr/sdm660_powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
-endif
- 
 # Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
