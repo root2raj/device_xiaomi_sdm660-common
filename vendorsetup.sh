@@ -1,7 +1,7 @@
 # rm -rf 
-rm -rf hardware/qcom-caf/msm8998/display
-rm -rf hardware/qcom-caf/msm8998/media
-rm -rf hardware/qcom-caf/msm8998/audio
+#rm -rf hardware/qcom-caf/msm8998/display
+#rm -rf hardware/qcom-caf/msm8998/media
+#rm -rf hardware/qcom-caf/msm8998/audio
 #rm -rf frameworks/base
 #rm -rf packages/apps/Settings
 #rm -rf frameworks/av#
