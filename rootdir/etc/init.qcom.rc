@@ -237,6 +237,8 @@ on boot
 
     start vendor.qcrild
     start vendor.qcrild2
+    enable vendor.dataqti
+    enable vendor.dataadpl
 
 # msm specific files that need to be created on /data
 on post-fs-data
