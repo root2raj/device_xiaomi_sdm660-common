@@ -162,6 +162,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_gl_phase_offset_ns=3000000 \
     debug.sf.hw=1 \
     debug.sf.enable_hwc_vds=1 \
+    debug.gralloc.enable_fb_ubwc=1 \
     debug.sf.latch_unsignaled=1 \
     ro.opengles.version=196610 \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
@@ -279,7 +280,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # WFD
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    persist.debug.wfd.enable=1
+    persist.debug.wfd.enable=1 \
+    persist.sys.wfd.virtual=0 \
+    ro.hdmi.enable=true \
+    ro.hdmi.mirror.enable=true
 
 # IORap
 PRODUCT_PROPERTY_OVERRIDES += \
