@@ -14,4 +14,4 @@
 #git clone https://github.com/dotMod/android_packages_apps_Settings -b dot11 packages/apps/Settings
 #git clone https://github.com/dotMod/android_frameworks_av-1 -b dot11 frameworks/av
 #git clone https://github.com/11-whyred-new/MiuiCamera -b cr-9.0 vendor/MiuiCamera
-#git clone https://github.com/predator112/android_kernel_xiaomi_sdm660_southwest -b 11.0-eas-wifi-r kernel/xiaomi/sdm660
+git clone https://github.com/predator112/android_kernel_xiaomi_sdm660_southwest -b 11.0-eas-wifi-r kernel/xiaomi/sdm660
