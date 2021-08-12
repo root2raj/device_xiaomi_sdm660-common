@@ -248,6 +248,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.multisim.config=dsds \
     persist.vendor.data.iwlan.enable=true \
     persist.vendor.data.mode=concurrent \
+    persist.vendor.qti.telephony.vt_cam_interface=2 \
     persist.vendor.radio.add_power_save=1 \
     persist.vendor.radio.apm_sim_not_pwdn=1 \
     persist.vendor.radio.atfwd.start=true \
