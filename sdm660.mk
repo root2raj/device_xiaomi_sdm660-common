@@ -165,6 +165,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.5:64 \
     android.hardware.camera.provider@2.6:64 \
     android.hardware.camera.provider@2.6 \
+    android.hardware.camera.device@3.5 \
     android.hardware.camera.provider@2.4-impl:32 \
     android.hardware.camera.provider@2.4-service \
     libdng_sdk.vendor \
@@ -259,6 +260,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     $(LOCAL_PATH)/gps/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     $(LOCAL_PATH)/gps/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf
+
+# Hotword blobs
+$(call inherit-product, vendor/xiaomi/google/google.mk)
 
 # Healthd
 PRODUCT_PACKAGES += \
