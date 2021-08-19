@@ -327,3 +327,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     power.saving.mode=1 \
     pm.sleep_mode=1
 
+# Camera
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.camera.is_type=5 \
+    persist.camera.googfd.enable=1 \
+    persist.camera.logical.default=1 \
+    persist.camera.gzoom.at=0
