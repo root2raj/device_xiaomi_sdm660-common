@@ -206,6 +206,14 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <fqname>@1.0::ISensorManager/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.vr</name> 
+        <transport>hwbinder</transport>
+        <version>1.0</version> <interface>
+            <name>IVr</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
         <name>vendor.qti.hardware.btconfigstore</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
