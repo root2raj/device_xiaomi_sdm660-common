@@ -2,7 +2,7 @@ allow qti_init_shell sysfs_cpu_boost:file write;
 allow qti_init_shell { sysfs sysfs_dm }:file write;
 allow qti_init_shell vendor_radio_data_file:dir { getattr read search };
 allow qti_init_shell vendor_radio_data_file:file { getattr read setattr write };
-#allow qti_init_shell qti_init_shell:capability { dac_override dac_read_search };
+allow qti_init_shell qti_init_shell:capability { dac_override dac_read_search };
 
 #set_prop(qti_init_shell, vendor_ram_prop)
 allow qti_init_shell kcal_dev:dir search;
@@ -17,5 +17,5 @@ allow qti_init_shell sysfs_vibrator:dir search;
 allow qti_init_shell sysfs_vibrator:file rw_file_perms;
 allow qti_init_shell sysfs_fpsinfo:dir search;
 allow qti_init_shell sysfs_fpsinfo:file rw_file_perms;
-#allow qti_init_shell qti_init_shell:capability { dac_override };
+allow qti_init_shell qti_init_shell:capability { dac_override };
 
