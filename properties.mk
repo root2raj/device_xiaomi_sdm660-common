@@ -334,3 +334,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.googfd.enable=1 \
     persist.camera.logical.default=1 \
     persist.camera.gzoom.at=0
+
+# Build User
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.user=iqbal
