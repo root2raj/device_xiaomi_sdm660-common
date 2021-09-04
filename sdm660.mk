@@ -170,11 +170,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.4:64 \
     android.hardware.camera.device@3.5:64 \
     android.hardware.camera.provider@2.6:64 \
-<<<<<<< HEAD
-    android.hardware.camera.provider@2.6 \
-    android.hardware.camera.device@3.5 \
-=======
->>>>>>> parent of 38e71cdf... sdm660-common : build android.hardware.camera.provider@2.4
     android.hardware.camera.provider@2.4-impl:32 \
     android.hardware.camera.provider@2.4-service \
     libdng_sdk.vendor \
