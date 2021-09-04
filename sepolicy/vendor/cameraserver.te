@@ -3,3 +3,6 @@ allow cameraserver init:unix_stream_socket { connectto };
 allow cameraserver system_prop:property_service { set };
 set_prop(cameraserver, system_prop)
 set_prop(cameraserver, camera_prop)
+binder_call(cameraserver, mediacodec);
+get_prop(cameraserver, vendor_persist_camera_prop)
+get_prop(cameraserver, vendor_video_prop)
