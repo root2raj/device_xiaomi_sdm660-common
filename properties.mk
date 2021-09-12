@@ -282,13 +282,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.delta_time.enable=true
 
-# WFD
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    persist.debug.wfd.enable=1 \
-    persist.sys.wfd.virtual=0 \
-    ro.hdmi.enable=true \
-    ro.hdmi.mirror.enable=true
-
 # Zygote preforking
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.device_config.runtime_native.usap_pool_enabled=true
