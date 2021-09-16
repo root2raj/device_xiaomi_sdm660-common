@@ -257,7 +257,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.sib16_support=1 \
     ro.telephony.default_network=22,22 \
-    ro.vendor.use_data_netmgrd=true 
+    ro.vendor.use_data_netmgrd=true \
+    ro.vold.umsdirtyratio=20 \
+    ro.ril.disable.power.collapse=0
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     DEVICE_PROVISIONED=1 \
@@ -286,12 +288,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.sys.wfd.virtual=0 \
     ro.hdmi.enable=true \
     ro.hdmi.mirror.enable=true
-
-# IORap
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.iorapd.enable=true \
-    iorapd.perfetto.enable=true \
-    iorapd.readahead.enable=true
 
 # Zygote preforking
 PRODUCT_PROPERTY_OVERRIDES += \
