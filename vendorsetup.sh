@@ -1,12 +1,12 @@
 # rm -rf 
-rm -rf packages/apps/Gallery2
-rm -rf hardware/qcom-caf/msm8998/display
-rm -rf hardware/qcom-caf/msm8998/media
-rm -rf hardware/qcom-caf/msm8998/audio
-rm -rf frameworks/base
-rm -rf packages/apps/Settings
+#rm -rf packages/apps/Gallery2
+#rm -rf hardware/qcom-caf/msm8998/display
+#rm -rf hardware/qcom-caf/msm8998/media
+#rm -rf hardware/qcom-caf/msm8998/audio
+#rm -rf frameworks/base
+#rm -rf packages/apps/Settings
 #rm -rf frameworks/av
-rm -rf kernel/xiaomi/sdm660
+#rm -rf kernel/xiaomi/sdm660
 # git clone
 git clone https://github.com/NusantaraProject-ROM/android_packages_apps_Gallery2 -b 11 packages/apps/Gallery2
 git clone https://github.com/SakilMondal/hardware_qcom-caf_msm8998_display hardware/qcom-caf/msm8998/display
@@ -18,8 +18,8 @@ git clone https://github.com/dotMod/android_frameworks_av-1 -b dot11 frameworks/
 git clone https://github.com/11-whyred-new/MiuiCamera -b cr-9.0 vendor/MiuiCamera
 git clone https://github.com/predator112/android_kernel_xiaomi_sdm660_southwest -b 11.0-eas-wifi-r kernel/xiaomi/sdm660
 
-rm -rf external/tinycompress
+#rm -rf external/tinycompress
 git clone https://github.com/pkm774/external_tinycompress -b ks-aosp.lnx.3.0.r15-rel external/tinycompress
 
-rm -rf external/tinyalsa
+#rm -rf external/tinyalsa
 git clone https://source.codeaurora.org/quic/la/platform/external/tinyalsa -b ks-aosp.lnx.3.0.r15-rel external/tinyalsa
