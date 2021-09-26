@@ -117,9 +117,6 @@ on init
     # Disable UFS powersaving
     write /sys/devices/platform/soc/${ro.boot.bootdevice}/clkgate_enable 0
 
-    # Disable powersaving
-    write /sys/module/lpm_levels/parameters/sleep_disabled 1
-
     # bring back all cores
     write /sys/devices/system/cpu/cpu0/online 1
     write /sys/devices/system/cpu/cpu1/online 1
