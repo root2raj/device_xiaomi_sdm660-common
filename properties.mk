@@ -259,7 +259,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=22,22 \
     ro.vendor.use_data_netmgrd=true \
     ro.vold.umsdirtyratio=20 \
-    ro.ril.disable.power.collapse=0
+    ro.ril.disable.power.collapse=0 \
+    persist.vendor.radio.aosp_usr_pref_sel=true
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     DEVICE_PROVISIONED=1 \
