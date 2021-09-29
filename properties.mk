@@ -106,10 +106,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Blur
 PRODUCT_PRODUCT_PROPERTIES += \
-    persist.sys.sf.disable_blurs=1 \
-    ro.sf.blurs_are_expensive=1 \
-    ro.surface_flinger.supports_background_blur=1 \
-    debug.sf.disable_backpressure=1
+    ro.sf.blurs_are_expansive=1 \
+    ro.surface_flinger.supports_backgroud_blur=1 \
+    debug.sf.disable_backpressure=1 \
+    persist.sys.sf.disable_blurs=1
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -208,17 +208,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # FRP
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp
-
-# Graphics Optimizations
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.egl.force_msaa=1 \
-    debug.egl.hw=1 \
-    ro.hardware.egl=adreno \
-    ro.hardware.vulkan=adreno \
-    debug.hwui.renderer=skiagl \
-    ro.surface_flinger.use_color_management=true \
-    ro.surface_flinger.supports_background_blur=1 \
-    persist.sys.sf.disable_blurs=0
 
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \
