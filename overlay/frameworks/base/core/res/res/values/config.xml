@@ -414,9 +414,6 @@
          and one pSIM) -->
     <integer name="config_num_physical_slots">2</integer>
 
-    <!-- The max scale for the wallpaper when it's zoomed in -->
-    <item name="config_wallpaperMaxScale" format="float" type="dimen">1.00</item>
-
     <!-- The default intensity level for haptic feedback. See
          Settings.System.HAPTIC_FEEDBACK_INTENSITY more details on the constant values and
          meanings. -->
@@ -447,5 +444,4 @@
          true as well).  It can allow you to tune down your device's memory use without going to the point of 
          causing applications to turn off features. -->
      <bool name="config_avoidGfxAccel">true</bool>
-
 </resources>
